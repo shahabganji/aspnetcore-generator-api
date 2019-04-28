@@ -15,6 +15,7 @@ COPY . .
 RUN ls -laR
 
 #run tests
+ENV TEAMCITY_PROJECT_NAME=fake
 RUN dotnet test test/test.csproj
 
 #publish
