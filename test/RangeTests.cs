@@ -17,14 +17,14 @@ namespace test
             Assert.Equal( 3 , generated.Count() );
         }
 
-        [Fact]
-        public void CountShouldControlNumberOfResults_Fail()
-        {
-            var range = new Range{ Count = 3 };
+        // [Fact]
+        // public void CountShouldControlNumberOfResults_Fail()
+        // {
+        //     var range = new Range{ Count = 3 };
 
-            var generated = range.Of( () => "" );
+        //     var generated = range.Of( () => "" );
 
-            Assert.Equal( 4 , generated.Count() );
-        }
+        //     Assert.Equal( 4 , generated.Count() );
+        // }
     }
 }
