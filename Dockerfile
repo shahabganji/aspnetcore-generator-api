@@ -16,7 +16,7 @@ RUN ls -laR
 
 #run tests
 ENV TEAMCITY_PROJECT_NAME=fake
-RUN dotnet test test/test.csproj
+RUN dotnet test test/test.csproj --verbosity normal
 
 #publish
 RUN dotnet publish api/api.csproj -c Release -o /publish
